@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ... (existing styles remain unchanged) ... */
+
+.profile {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.profile-left,
+.profile-right {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.changing-letter {
+    font-size: 72px;
+    font-weight: bold;
+    color:red;
+    animation: changeLetter 2s infinite;
+}
+
+@keyframes changeLetter {
+    0% {
+        content: "C";
+    }
+    50% {
+        content: "S";
+    }
+    100% {
+        content: "C";
+    }
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+*{
+    margin: 10;
+    padding: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.outer-heading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 45px;
+
+}
+
+.inner-heading{
+    border: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 45px;
+
+}
+
+.inner-heading  span{
+    position: relative;
+    color: crimson;
+    animation: ani 10s ease infinite;
+
+}
+
+@keyframes ani{
+    0%,100%{
+        top: 0;
+    }
+
+    20%{
+        top: 0;
+    }
+    25%{
+        top: -50px;
+    }
+    45%{
+        top: -50px;
+    }
+    50%{
+        top: -100px;
+    }
+    70%{
+        top: -100px;
+    }
+    75%{
+        top: -150px;
+    }
+    95%{
+        top: -150px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio page </h1>
+    </header>
+    <section class="content">
+    <div class="row">
+        <div class="col">
+            <div class="outer-heading">
+                <h1>
+                    I Am
+                    <div class="inner-heading">
+                        <span>
+                        Front-end Developer<br/>
+                        Beck-end Developer<br/>
+                        UI/UX designer<br/>
+                        Online Teacher<br/>
+                        Editor
+                    </span>
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="profile">
+                <img src="360_F_550958748_OeGcRonEUNoVhd0wjd9zSEMhLFIGO9Bt.jpg" alt="Profile Left" class="profile-left">
+                
+        
+            </div>
+        </div>
+    </div>
+    
+
+        
+       
+
+        <h1>ABOUT ME</h1>
+        <p><b>Hello! I am a passionate student of Computer Science and Engineering from <u> MAHAMAYA POLYTECHNIC  OF INFORMATION TECHNOLOGY,HATHRAS.</u></b></p><br><br>
+        <p><b>Certainly! Here's an example of a brief biography for a Computer Science and Engineering (CSE) diploma student:
+
+            ---
+            
+            **Name:** [Your Name]
+            
+            **Biography:**
+            I am a dedicated and passionate Computer Science and Engineering (CSE) diploma student, constantly striving to expand my knowledge and skills in the ever-evolving world of technology. With a strong foundation in programming, algorithms, and computer systems, I am enthusiastic about exploring innovative solutions to real-world problems.
+            
+            My academic journey in CSE has equipped me with expertise in various programming languages such as Java, Python, and C++, as well as hands-on experience in software development, web technologies, and database management. I have a keen interest in data structures and algorithms, always seeking to optimize code for efficiency and performance.
+            
+            Apart from my technical skills, I am a proactive team player with excellent communication skills. I enjoy collaborating with peers to tackle challenging projects, brainstorming creative ideas, and learning from diverse perspectives. I am also open to new opportunities for growth, whether it's through internships, hackathons, or community involvement.
+            
+            In my free time, I love to explore the latest advancements in technology, engage in coding challenges, and contribute to open-source projects. I am excited about the prospect of leveraging my skills and knowledge to make a meaningful impact in the field of computer science and engineering.
+            
+            Feel free to reach out to me for collaborations, discussions, or any tech-related endeavors. I am always eager to connect with fellow enthusiasts and professionals in the CSE community.
+            
+            ---
+            
+            Remember to personalize the biography by adding specific details about your experiences, skills, and aspirations to make it truly reflect your profile as a CSE diploma student.</b></p>
+        
+        <h1>SKILL</h1>
+        <ul id="projects-list"><b><U>ADVANCE JAVA</U></b></ul>
+        <ul id="projects-list"><b><U>INTRODUCTION OF C PROGRAMMING</U></b> </ul>
+        <ul id="projects-list"><b><U>INTRODUCTION OF PYTHON</U></b></ul>
+        <ul id="projects-list"><b><U>INTRODUCTION OF PHP </U></b> </ul>
+        <h2>Projects</h2>
+        <ul id="projects-list"><b><U>LIBRARY MANAGEMENT SYSTEM IN PHP</U></b></ul>
+        <ul id="projects-list"><b><U>CRM IN JAVA</U></b> </ul>
+        <ul id="projects-list"><b><U>VIRTUAL CLASSROOM  IN  JAVA</U></b></ul>
+        <ul id="projects-list"><b><U>JOB PORTAL  IN  PHP</U></b> </ul>
+        <h2>Download Resume</h2>
+        <p><b>You can download my resume below:</b></p>
+        <a href="EXPERIMENT NO.pdf" download="YourName_Resume.pdf">Download Resume</a>
+    </section>
+
+    <script src="script.js">
+        document.addEventListener("DOMContentLoaded", function() {
+    const projectsList = document.getElementById("projects-list");
+
+    // Simulated dynamic data (you can replace this with data fetched from a database)
+    const projectsData = [
+        { name: "Project 1", description: "Description for Project 1" },
+        { name: "Project 2", description: "Description for Project 2" },
+        { name: "Project 3", description: "Description for Project 3" }
+    ];
+
+    // Populate the projects list dynamically
+    projectsData.forEach(project => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<strong>${project.name}</strong>: ${project.description}`;
+        projectsList.appendChild(listItem);
+    });
+});
+
+    </script>
+</body>
+</html>
+
